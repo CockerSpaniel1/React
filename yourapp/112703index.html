@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <title>React CDN</title>
+</head>
+<body>
+    
+    <div id="root"></div>
+        <script type="text/babel">
+
+            const mystyle3={
+                backgroundColor:"green",
+                color:"white",
+                borderRadius:"8px",
+                border:"1px Orange solid"
+
+            };
+
+
+        const MyHeader=()=>{
+
+            const mystyle={
+                backgroundColor:"brown",
+                color:"lightyellow",
+                padding:"8px",
+                fontSize:"2rem"
+
+            };
+
+            const mystyle2={
+                color:"green"}
+
+            return(
+                <div>
+                <h1 style={mystyle}>Welcome to Cafe Time</h1>
+                <hr/>    
+                <h3 style={mystyle2}>咖啡的歷史起源</h3>
+                <p>咖啡的來源已無從稽考。諸多傳說之一指咖啡原產於衣索比亞（Ethiopia）西南部的咖法省高原地區，據說是一位牧羊人發現羊吃了一種植物後，變得非常興奮活潑，因此發現了咖啡。
+                </p>
+                </div>
+            )   ;
+                
+        };
+        const MyProduct=()=>{
+            
+            return (<div>
+                <ul>
+                <li><span style={mystyle3}>阿拉比卡咖啡(Arabica coffee)</span>
+                原產於東非伊索比亞南部的阿比西 尼亞高原，現今沿海尚有野生種。</li>
+
+                <li><span style={mystyle3}>羅布斯塔咖啡(Robusta coffee)</span>
+                羅布斯塔咖啡屬於剛果咖啡的突變 種，原產於西非剛果，本種有缺乏香氣之 憾，苦味較強，酸味不足。</li>
+
+                <li><span style={mystyle3}>賴比瑞亞咖啡(Liberia coffee)</span>
+                原產於西非賴比瑞亞，本種香味不佳， 苦味較強。除少數生產國自己消費外，只 有歐洲人飲用賴比瑞亞咖啡。</li>
+                    </ul>
+                    </div>
+                )
+
+        };
+
+        // const mypage=(
+        //     <>
+        //         <MyHeader/>
+        //         <MyProduct/>
+        //     </>
+        // )
+
+
+        const root=ReactDOM.createRoot(document.getElementById("root"))
+        root.render(
+            //mypage
+
+            <div>
+                <MyHeader/>
+                <MyProduct/>
+                </div>
+                    
+        );
+      
+
+        </script>  
+    
+
+
+
+</body>
+</html>

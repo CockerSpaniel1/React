@@ -1,0 +1,103 @@
+* {box-sizing:border-box;}
+
+body {margin:0px;}
+
+nav{background-color:brown;}    
+
+nav ul{
+    list-style-type:none;
+    display:inline-flex;
+    align-items:center;
+    margin:0px;
+}
+
+nav li {padding:0.5vw;}
+
+nav a {
+    text-decoration:none;
+    color:burlywood;
+    font-size:1.25rem;
+
+}
+
+nav a:hover{
+    color:white;
+    border-bottom:1px solid yellowgreen;
+    border-top:1px solid yellowgreen;
+}
+
+
+
+h1 { 
+    
+    margin-left:30px;}
+
+
+.coffee-svg{
+    width:20px;
+
+}
+.coffee-img {
+    width:80px;
+    border:1px lightgrey solid;
+    border-radius:8px;
+    box-shadow:2px 2px 1px 1px;
+
+}
+.link-img {
+    width:15%;
+
+}
+
+
+.link-div{
+    display:inline-flex;
+    height:5rem;
+    margin:0px;
+    align-items:center;
+}
+.link-to{padding:1em;}
+
+
+/* -------------------------------- */
+.cta {
+    width:200px;
+    height:50px;
+    background-color:brown;
+    color:bisque;
+    border-radius:1.5rem;
+    box-shadow:3px 2px 1px 1px;
+    margin-right:1.25rem;
+}
+
+.cta:hover{
+background-image:url("./images/coffee/coffee07.jpg");
+
+}
+
+
+.about-div{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    margin:1.25rem;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:1px gray solid;
+}
+
+.about-div:hover{
+cursor:pointer;
+background-color:black !important;
+color:white;
+}
+
+
+.about-img{
+    border-radius:1rem;
+    border:darkgoldenrod 1rem solid;
+    width:65%;
+    padding:1.5rem;
+    border-block-color: brown;
+}

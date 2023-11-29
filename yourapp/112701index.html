@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <title>React CDN</title>
+</head>
+<body>
+    
+    <div id="root"></div>
+    <script type="text/babel">
+
+        ReactDOM.render(
+        
+            <div>
+
+                 <h1>Welcome to Cafe Time</h1>
+    
+                <h3>咖啡的歷史起源</h3>
+                <p>咖啡的來源已無從稽考。諸多傳說之一指咖啡原產於衣索比亞（Ethiopia）西南部的咖法省高原地區，據說是一位牧羊人發現羊吃了一種植物後，變得非常興奮活潑，因此發現了咖啡。
+                </p>
+            </div>,
+            document.getElementById("root"),
+            function(){
+                window.alert("test");
+            }
+        );
+
+
+    </script>  
+    
+</body>
+</html>
