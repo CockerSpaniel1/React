@@ -15,7 +15,7 @@ function MyFirestore(){
 
         // const querySnapshot = getDocs(collection(db,"TextEmoji"))
         // console.log(querySnapshot)
-        //-------------------------------------------------------
+        //--------------------方法1----------------------------------
         async function getTextEmoji(db){
             const emojiColl = collection(db,"TextEmoji");
             const emojiDocs = await getDocs(emojiColl);
@@ -27,7 +27,7 @@ function MyFirestore(){
         // console.log( getTextEmoji(db) )
 
         const  [emoji, setEmoji]=useState([]);
-
+        //--------------------方法2-----------------------------------
         const fetchEmoji =async()=>{
             
             await getDocs( collection(db,"TextEmoji"))
